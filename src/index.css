@@ -9,6 +9,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #2c446c;
   /* background-color: #fafafa; */
 }
 /* This connects to public index.html */
@@ -37,7 +38,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #203040;
+  background-color: #2c446c;
   color: #ffffff;
 }
 /* Common */
@@ -161,6 +162,7 @@ img.smallTwo {
 
 .refDate {
   font-size: 25px;
+  color: #94a4bc;
 }
 
 .mem:hover .front {
@@ -175,10 +177,6 @@ img.smallTwo {
 
 .mem:hover .vers {
   display: inline-block;
-}
-
-.mon {
-  /* margin: 40px 0; */
 }
 
 @media screen and (max-width: 768px) {

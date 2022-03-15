@@ -10,7 +10,11 @@ export default function Months() {
       {mon.map((m) => (
         <div className="mem">
           <div className="front2">
-            <Link key={m.id} to={`/${m.id}`}>
+            <Link
+              style={{ textDecoration: "none", color: "#2c446c" }}
+              key={m.id}
+              to={`/${m.id}`}
+            >
               <h1 className="ref">{m.id}</h1>
             </Link>
           </div>
