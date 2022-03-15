@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
-import logo from "./img/nexa-trans-white.png";
-import LoanProgramScreen from "./screens/LoanProgramScreen";
-import Menu from "./components/Menu";
-import PROFILE from "./.profile.js";
+import logo from "./img/fa.png";
+import DATA from "./.data.js";
 
 function App() {
-  const { profile } = PROFILE;
+  const { data } = DATA;
+  console.log("hey", data);
+  <Route path="/" component={HomeScreen} exact></Route>;
+
   return (
     <BrowserRouter>
       <div className="grid-container">
@@ -17,34 +18,13 @@ function App() {
               <img className="small" src={logo} alt="logo"></img>
             </Link>
           </div>
-          <div className="nonMobileNavLinks">
-            <Link to="/loan-programs">Loan Programs</Link>
-            <a
-              href="https://nexamortgage.com/privacy-policy/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Privacy Policy
-            </a>
-            {profile.map((p) => (
-              <a
-                className="applyNowNav"
-                key={p.id}
-                href={p.loanLink}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Apply Now
-              </a>
-            ))}
-          </div>
-          <div className="menu">
-            <Menu />
-          </div>
         </header>
         <main>
-          <Route path="/loan-programs" component={LoanProgramScreen}></Route>
-          <Route path="/" component={HomeScreen} exact></Route>
+          {/* <Route path="/" component={HomeScreen} exact></Route> */}
+          <HomeScreen />
+          {/* {data.map((d) => (
+            <ul>{d.month}</ul> */}
+          {/* ))} */}
         </main>
         <footer className="row center">All rights reserved</footer>
       </div>

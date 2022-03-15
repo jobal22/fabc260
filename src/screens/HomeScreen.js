@@ -1,17 +1,21 @@
 import React from "react";
-import home from "../img/home.jpg";
-import HSProfilePicInfo from "../components/HSProfilePicInfo";
-import HSProfileFillerBox from "../components/HSProfileFillerBox";
+import { Link } from "react-router-dom";
+import DATA from "../.data.js";
 
 export default function HomeScreen() {
+  const { data } = DATA;
+  console.log(data);
   return (
-    <div>
-      <HSProfilePicInfo></HSProfilePicInfo>
-      <div className="hsContainer">
-        <img className="large" src={home} alt="home"></img>
-        <h1>Get a Great Mortgage Rate</h1>
-      </div>
-      <HSProfileFillerBox></HSProfileFillerBox>
+    <div className="btgrid">
+      {data.map((d) => (
+        <div className="mem" key={d.id}>
+          <div className="front">
+            <h1 className="ref">{d.ref}</h1>
+            <p className="ref refDate">{d.date}</p>
+          </div>
+          <p className="vers">{d.vers}</p>
+        </div>
+      ))}
     </div>
   );
 }
