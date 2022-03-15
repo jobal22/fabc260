@@ -154,7 +154,8 @@ img.smallTwo {
   justify-content: center;
 }
 
-.front {
+.front,
+.front2 {
   padding: 60px 20px 0 20px;
 }
 
@@ -174,6 +175,10 @@ img.smallTwo {
 
 .mem:hover .vers {
   display: inline-block;
+}
+
+.mon {
+  /* margin: 40px 0; */
 }
 
 @media screen and (max-width: 768px) {
