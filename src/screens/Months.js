@@ -4,7 +4,7 @@ import MORE from "../.more.js";
 
 export default function Months() {
   const { mon } = MORE;
-  console.log(mon);
+  // console.log(mon);
   return (
     <div>
       <div className="monthHeader">
@@ -22,7 +22,9 @@ export default function Months() {
                 key={m.id}
                 to={`/${m.id}`}
               >
-                <h1 className="ref">{m.id}</h1>
+                <h1 className="ref" key={m.id}>
+                  {m.id}
+                </h1>
               </Link>
             </div>
           </div>

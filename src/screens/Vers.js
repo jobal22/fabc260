@@ -41,7 +41,7 @@ export default class Vers extends Component {
     const { data } = DATA;
     const findMonth = data.map((m) => m.month);
     const findRef = data.filter((d) => d.month == monthId);
-    console.log(findRef);
+    // console.log(findRef);
     return (
       <div>
         <div className="monthHeader">
