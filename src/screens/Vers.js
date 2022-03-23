@@ -43,16 +43,22 @@ export default class Vers extends Component {
     const findRef = data.filter((d) => d.month == monthId);
     console.log(findRef);
     return (
-      <div className="btgrid">
-        {findRef.map((r) => (
-          <div className="mem" key={r.id}>
-            <div className="front">
-              <h1 className="ref">{r.ref}</h1>
-              <p className="ref refDate">{r.date}</p>
+      <div>
+        <div className="monthHeader">
+          <h2>Welcome to FABC260's memory verses</h2>
+          <p>Click on a Bible reference in order to see the memory verse.</p>
+        </div>
+        <div className="btgrid">
+          {findRef.map((r) => (
+            <div className="mem" key={r.id}>
+              <div className="front">
+                <h1 className="ref">{r.ref}</h1>
+                <p className="ref refDate">{r.date}</p>
+              </div>
+              <p className="vers">{r.vers}</p>
             </div>
-            <p className="vers">{r.vers}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     );
   }

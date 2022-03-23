@@ -136,14 +136,21 @@ img.smallTwo {
   width: 100%;
 }
 
-.btgrid {
+.monthHeader {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.btgrid,
+.btgridVers {
   display: grid;
   justify-content: center;
   align-content: center;
   gap: 70px;
   grid-template-columns: auto auto;
-  margin: 100px 0;
+  margin: 70px 0;
 }
+
 .mem {
   width: 350px;
   height: 250px;

@@ -2,6 +2,7 @@
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import Vers from "./screens/Vers";
 import Months from "./screens/Months";
+import ScrollToTop from "./scrollToTop";
 import logo from "./img/fa.png";
 import DATA from "./.data.js";
 
