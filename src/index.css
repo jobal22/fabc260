@@ -190,4 +190,7 @@ img.smallTwo {
   .btgrid {
     grid-template-columns: auto;
   }
+  .monthHeader {
+    padding: 0 30px;
+  }
 }
